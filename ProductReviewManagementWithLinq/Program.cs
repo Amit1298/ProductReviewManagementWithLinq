@@ -32,7 +32,12 @@ namespace ProductReviewManagementWithLinq
             //    Console.WriteLine("ProductID:-"+list.ProductID+" "+"UserID:-"+list.UserID+" "+"Rating:-"+list.Rating+" "+"Review:-"+" "+list.Review+" "+"isLike:-"+list.isLike);
             //}
             Management management = new Management();
-            management.TopRecords(ProductReviewlist);
+
+            //UC2
+            //management.TopRecords(ProductReviewlist);
+
+            //UC3
+            management.SelectedRecords(ProductReviewlist);
         }
     }
 }
