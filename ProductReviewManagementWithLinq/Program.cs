@@ -27,10 +27,12 @@ namespace ProductReviewManagementWithLinq
                 new ProductReviewManagement() { ProductID = 15, UserID = 1, Rating = 3, Review = "Good", isLike = true },
                 new ProductReviewManagement() { ProductID = 16, UserID = 5, Rating = 2, Review = "Good", isLike = true }
             };
-            foreach(var list in ProductReviewlist)
-            {
-                Console.WriteLine("ProductID:-"+list.ProductID+" "+"UserID:-"+list.UserID+" "+"Rating:-"+list.Rating+" "+"Review:-"+" "+list.Review+" "+"isLike:-"+list.isLike);
-            }
+            //foreach(var list in ProductReviewlist)
+            //{
+            //    Console.WriteLine("ProductID:-"+list.ProductID+" "+"UserID:-"+list.UserID+" "+"Rating:-"+list.Rating+" "+"Review:-"+" "+list.Review+" "+"isLike:-"+list.isLike);
+            //}
+            Management management = new Management();
+            management.TopRecords(ProductReviewlist);
         }
     }
 }
